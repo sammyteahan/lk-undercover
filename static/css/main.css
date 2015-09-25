@@ -296,13 +296,29 @@ footer {
               ¡TEAM PAGE
 \*------------------------------------*/
 .flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
   justify-content: space-between; }
 
 .flex-item {
   background: #fff;
   color: #383D44;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 calc(33% - 10px);
+  -moz-box-flex: 0;
+  -moz-flex: 0 1 calc(33% - 10px);
+  -ms-flex: 0 1 calc(33% - 10px);
   flex: 0 1 calc(33% - 10px);
   margin-bottom: 10px;
   text-align: center; }
@@ -317,9 +333,19 @@ footer {
     width: 100%; }
   @media screen and (max-width: 768px) {
     .flex-item {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 calc(50% - 10px);
+      -moz-box-flex: 0;
+      -moz-flex: 0 1 calc(50% - 10px);
+      -ms-flex: 0 1 calc(50% - 10px);
       flex: 0 1 calc(50% - 10px); } }
   @media screen and (max-width: 650px) {
     .flex-item {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 calc(100% - 10px);
+      -moz-box-flex: 0;
+      -moz-flex: 0 1 calc(100% - 10px);
+      -ms-flex: 0 1 calc(100% - 10px);
       flex: 0 1 calc(100% - 10px);
       height: auto; } }
 
