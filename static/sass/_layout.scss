@@ -15,14 +15,15 @@ html {
     height: 100%;
 }
 
-body{
+body {
+    // background: color(main-1);
+    background: color(accent-3);
     height: 100%;
     font-family: sans-serif;
     -webkit-font-smoothing: antialiased;
-    background: color(main-1);
 }
 
-.lk-wrap{
+.lk-wrap {
     min-height: 100%;
     height: auto !important;
     height: 100%;

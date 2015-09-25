@@ -2,5 +2,44 @@
 @import "_helpers";
 @import "_buttons";
 @import "_typography";
+@import "_flexbox";
+@import "_layout";
 
-@import "_layout"
+
+
+/*------------------------------------*\
+              ¡TEAM PAGE
+\*------------------------------------*/
+
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.flex-item {
+	background: #fff;
+	color: color(accent-2);
+	flex: 0 1 calc(33% - 10px);
+	margin-bottom: 10px;
+	text-align: center;
+	&-title {
+		font-weight: 600;
+		font-size: 32px;
+		padding: 10px 0 0;
+	}
+	.info {
+		padding: 10px 0 15px;
+	}
+	img {
+		max-width: 100%;
+		width: 100%;
+	}
+	@media screen and (max-width: breakpoint(tablet)) {
+		flex: 0 1 calc(50% - 10px);
+	}
+	@media screen and (max-width: breakpoint(phone-lg)) {
+		flex: 0 1 calc(100% - 10px);
+		height: auto;
+	}
+}
