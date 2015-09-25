@@ -1,3 +1,42 @@
 /*------------------------------------*\
               ¡BUTTONS
 \*------------------------------------*/
+
+@import "_variables";
+
+
+%btn {
+	border: none;
+	cursor: pointer;
+}
+
+.btn-sm {
+
+}
+
+.btn-md {
+	font-size: $default-font-size;
+	padding: 15px 25px;
+}
+
+.btn-lg {
+	font-size: 22px;
+	padding: 10px 45px;
+}
+
+.lk-btn {
+	@extend %btn;
+	background: color(accent-2);
+	border-radius: 4px;
+	color: color(main-1);
+	display: inline-block;
+}
+
+.lk-btn:hover,
+.lk-btn:active {
+	background: lighten(color(accent-2), 2%);
+}
+
+.lk-btn:focus {
+	outline: 0 !important;
+}

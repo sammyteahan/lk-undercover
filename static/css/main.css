@@ -2,6 +2,9 @@
 /*------------------------------------*\
               ¡VARIABLES
 \*------------------------------------*/
+/**
+* Default Sizes
+*/
 /*------------------------------------*\
               ¡HELPERS
 \*------------------------------------*/
@@ -213,6 +216,37 @@
               ¡BUTTONS
 \*------------------------------------*/
 /*------------------------------------*\
+              ¡VARIABLES
+\*------------------------------------*/
+/**
+* Default Sizes
+*/
+.lk-btn {
+  border: none;
+  cursor: pointer; }
+
+.btn-md {
+  font-size: 16px;
+  padding: 15px 25px; }
+
+.btn-lg {
+  font-size: 22px;
+  padding: 10px 45px; }
+
+.lk-btn {
+  background: #383D44;
+  border-radius: 4px;
+  color: #FFFFFF;
+  display: inline-block; }
+
+.lk-btn:hover,
+.lk-btn:active {
+  background: #3d424a; }
+
+.lk-btn:focus {
+  outline: 0 !important; }
+
+/*------------------------------------*\
               ¡TYPOGRAPHY
 \*------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
@@ -233,10 +267,10 @@ html {
   height: 100%; }
 
 body {
+  background: #222222;
   height: 100%;
   font-family: sans-serif;
-  -webkit-font-smoothing: antialiased;
-  background: #FFFFFF; }
+  -webkit-font-smoothing: antialiased; }
 
 .lk-wrap {
   min-height: 100%;
@@ -257,5 +291,36 @@ header {
 .lk-push,
 footer {
   height: 100px; }
+
+/*------------------------------------*\
+              ¡TEAM PAGE
+\*------------------------------------*/
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+
+.flex-item {
+  background: #fff;
+  color: #383D44;
+  flex: 0 1 calc(33% - 10px);
+  margin-bottom: 10px;
+  text-align: center; }
+  .flex-item-title {
+    font-weight: 600;
+    font-size: 32px;
+    padding: 10px 0 0; }
+  .flex-item .info {
+    padding: 10px 0 15px; }
+  .flex-item img {
+    max-width: 100%;
+    width: 100%; }
+  @media screen and (max-width: 768px) {
+    .flex-item {
+      flex: 0 1 calc(50% - 10px); } }
+  @media screen and (max-width: 650px) {
+    .flex-item {
+      flex: 0 1 calc(100% - 10px);
+      height: auto; } }
 
 /*# sourceMappingURL=main.css.map */
