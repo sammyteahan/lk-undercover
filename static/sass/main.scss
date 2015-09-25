@@ -12,15 +12,15 @@
 \*------------------------------------*/
 
 .flex-container {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
+	@include flexbox();
+	@include flex-flow(row wrap);
+	@include justify-content(space-between);
 }
 
 .flex-item {
 	background: #fff;
 	color: color(accent-2);
-	flex: 0 1 calc(33% - 10px);
+	@include flex(0 1 calc(33% - 10px));
 	margin-bottom: 10px;
 	text-align: center;
 	&-title {
@@ -36,10 +36,10 @@
 		width: 100%;
 	}
 	@media screen and (max-width: breakpoint(tablet)) {
-		flex: 0 1 calc(50% - 10px);
+		@include flex(0 1 calc(50% - 10px));
 	}
 	@media screen and (max-width: breakpoint(phone-lg)) {
-		flex: 0 1 calc(100% - 10px);
+		@include flex(0 1 calc(100% - 10px));
 		height: auto;
 	}
 }
