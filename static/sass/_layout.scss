@@ -35,8 +35,37 @@ body {
 
 
 /*------------------------------------*\
-               ¡SECTION
+               ¡FLEX
 \*------------------------------------*/
+
+.flex-container {
+    @include flexbox();
+    @include flex-flow(row wrap);
+}
+
+.flex-item {
+    background: #fff;
+    color: color(accent-2);
+    &-title {
+        font-weight: 600;
+        font-size: 32px;
+        padding: 10px 0 0;
+    }
+    .info {
+        padding: 10px 0 15px;
+    }
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
+    @media screen and (max-width: breakpoint(tablet)) {
+        @include flex(0 1 calc(50% - 10px));
+    }
+    @media screen and (max-width: breakpoint(phone-lg)) {
+        @include flex(0 1 calc(100% - 10px));
+        height: auto;
+    }
+}
 
 
 
@@ -47,16 +76,56 @@ body {
 
 header {
     height: config(header);
+    .logo {
+        float: left;
+    }
+    nav {
+        float: left;
+    }
 }
 
 
 
 
 /*------------------------------------*\
-                ¡WORK
+              ¡TEAM PAGE
 \*------------------------------------*/
 
-.section-work {
+.wrap-team {
+    @include justify-content(space-between);
+}
+
+.wrap-member {
+    @include flex(0 1 calc(33% - 10px));
+    margin-bottom: 10px;
+    text-align: center;
+    &-title {
+        font-weight: 600;
+        font-size: 32px;
+        padding: 10px 0 0;
+    }
+}
+
+
+
+
+/*------------------------------------*\
+              ¡WORK PAGE
+\*------------------------------------*/
+
+.wrap-work {
+    @include justify-content(space-between);
+}
+
+.wrap-sample {
+    @include flex(0 1 calc(50% - 10px));
+    margin-bottom: 20px;
+    h4 {
+        
+    }
+    h5 {
+
+    }
     
 }
 

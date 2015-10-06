@@ -26,7 +26,7 @@
   padding: 0 20px;
   width: 100%;
   height: 100%;
-  max-width: 1000px; }
+  max-width: 1200px; }
   @media screen and (max-width: 650px) {
     .lk-squeeze {
       padding: 0 10px; } }
@@ -280,26 +280,7 @@ body {
   position: relative; }
 
 /*------------------------------------*\
-               ¡SECTION
-\*------------------------------------*/
-/*------------------------------------*\
-                ¡HEADER
-\*------------------------------------*/
-header {
-  height: 100px; }
-
-/*------------------------------------*\
-                ¡WORK
-\*------------------------------------*/
-/*------------------------------------*\
-                ¡FOOTER
-\*------------------------------------*/
-.lk-push,
-footer {
-  height: 100px; }
-
-/*------------------------------------*\
-              ¡TEAM PAGE
+               ¡FLEX
 \*------------------------------------*/
 .flex-container {
   display: -webkit-box;
@@ -310,24 +291,11 @@ footer {
   -webkit-flex-flow: row wrap;
   -moz-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  justify-content: space-between; }
+  flex-flow: row wrap; }
 
 .flex-item {
   background: #fff;
-  color: #383D44;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 1 calc(33% - 10px);
-  -moz-box-flex: 0;
-  -moz-flex: 0 1 calc(33% - 10px);
-  -ms-flex: 0 1 calc(33% - 10px);
-  flex: 0 1 calc(33% - 10px);
-  margin-bottom: 10px;
-  text-align: center; }
+  color: #383D44; }
   .flex-item-title {
     font-weight: 600;
     font-size: 32px;
@@ -354,5 +322,65 @@ footer {
       -ms-flex: 0 1 calc(100% - 10px);
       flex: 0 1 calc(100% - 10px);
       height: auto; } }
+
+/*------------------------------------*\
+                ¡HEADER
+\*------------------------------------*/
+header {
+  height: 100px; }
+  header .logo {
+    float: left; }
+  header nav {
+    float: left; }
+
+/*------------------------------------*\
+              ¡TEAM PAGE
+\*------------------------------------*/
+.wrap-team {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between; }
+
+.wrap-member {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 calc(33% - 10px);
+  -moz-box-flex: 0;
+  -moz-flex: 0 1 calc(33% - 10px);
+  -ms-flex: 0 1 calc(33% - 10px);
+  flex: 0 1 calc(33% - 10px);
+  margin-bottom: 10px;
+  text-align: center; }
+  .wrap-member-title {
+    font-weight: 600;
+    font-size: 32px;
+    padding: 10px 0 0; }
+
+/*------------------------------------*\
+              ¡WORK PAGE
+\*------------------------------------*/
+.wrap-work {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between; }
+
+.wrap-sample {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 calc(50% - 10px);
+  -moz-box-flex: 0;
+  -moz-flex: 0 1 calc(50% - 10px);
+  -ms-flex: 0 1 calc(50% - 10px);
+  flex: 0 1 calc(50% - 10px);
+  margin-bottom: 20px; }
+
+/*------------------------------------*\
+                ¡FOOTER
+\*------------------------------------*/
+.lk-push,
+footer {
+  height: 100px; }
 
 /*# sourceMappingURL=main.css.map */
