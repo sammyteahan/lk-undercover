@@ -4,8 +4,8 @@ var express = require('express'),
 
 router.route('')
     
-    .get(function (req, res) {
-        res.render('team', {teamActive: true});
-    });
+  .get(function (req, res) {
+    res.render('team', {teamActive: true});
+  });
 
 module.exports = router;
