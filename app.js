@@ -1,11 +1,11 @@
 var express         = require('express')
-    exphbs          = require('express-handlebars')
-    route           = express.Router()
-    indexRoute      = require('./routes/index.js')
-    teamRoute       = require('./routes/team.js')
-    workRoute       = require('./routes/work.js')
-    githubRoute     = require('./routes/github.js')
-    productsRoute   = require('./routes/products.js');
+	exphbs            = require('express-handlebars')
+	route             = express.Router()
+	indexRoute        = require('./routes/index.js')
+  teamRoute         = require('./routes/team.js')
+  workRoute         = require('./routes/work.js')
+  githubRoute       = require('./routes/github.js')
+  productsRoute     = require('./routes/products.js');
 var app = express();
 
 app.engine('handlebars', exphbs({defaultLayout: 'base'}));

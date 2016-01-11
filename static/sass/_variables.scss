@@ -9,7 +9,11 @@ $configs: (
 );
 
 $colors: (
-	main-1: #FFFFFF
+	main-1: #FFFFFF,
+	accent-1: #FFC100, /* Yellow */
+	accent-2: #383D44, /* Dark Blue */
+	accent-3: #222222, /* Almost Black */
+	accent-4: #7e7e7e, /* Gray */
 );
 
 $breakpoints: (
@@ -43,3 +47,10 @@ $breakpoints: (
 	@warn "Unknown #{$key} in breakpoints map";
 	@return null;
 }
+
+
+/**
+* Default Sizes
+*/
+
+$default-font-size: 16px;

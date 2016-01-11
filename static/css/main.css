@@ -2,6 +2,9 @@
 /*------------------------------------*\
               ¡VARIABLES
 \*------------------------------------*/
+/**
+* Default Sizes
+*/
 /*------------------------------------*\
               ¡HELPERS
 \*------------------------------------*/
@@ -23,7 +26,7 @@
   padding: 0 20px;
   width: 100%;
   height: 100%;
-  max-width: 1000px; }
+  max-width: 1200px; }
   @media screen and (max-width: 650px) {
     .lk-squeeze {
       padding: 0 10px; } }
@@ -213,6 +216,37 @@
               ¡BUTTONS
 \*------------------------------------*/
 /*------------------------------------*\
+              ¡VARIABLES
+\*------------------------------------*/
+/**
+* Default Sizes
+*/
+.lk-btn {
+  border: none;
+  cursor: pointer; }
+
+.btn-md {
+  font-size: 16px;
+  padding: 15px 25px; }
+
+.btn-lg {
+  font-size: 22px;
+  padding: 10px 45px; }
+
+.lk-btn {
+  background: #383D44;
+  border-radius: 4px;
+  color: #FFFFFF;
+  display: inline-block; }
+
+.lk-btn:hover,
+.lk-btn:active {
+  background: #3d424a; }
+
+.lk-btn:focus {
+  outline: 0 !important; }
+
+/*------------------------------------*\
               ¡TYPOGRAPHY
 \*------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
@@ -233,10 +267,10 @@ html {
   height: 100%; }
 
 body {
+  background: #222222;
   height: 100%;
   font-family: sans-serif;
-  -webkit-font-smoothing: antialiased;
-  background: #FFFFFF; }
+  -webkit-font-smoothing: antialiased; }
 
 .lk-wrap {
   min-height: 100%;
@@ -246,10 +280,101 @@ body {
   position: relative; }
 
 /*------------------------------------*\
+               ¡FLEX
+\*------------------------------------*/
+.flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+
+.flex-item {
+  background: #fff;
+  color: #383D44; }
+  .flex-item-title {
+    font-weight: 600;
+    font-size: 32px;
+    padding: 10px 0 0; }
+  .flex-item .info {
+    padding: 10px 0 15px; }
+  .flex-item img {
+    max-width: 100%;
+    width: 100%; }
+  @media screen and (max-width: 768px) {
+    .flex-item {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 calc(50% - 10px);
+      -moz-box-flex: 0;
+      -moz-flex: 0 1 calc(50% - 10px);
+      -ms-flex: 0 1 calc(50% - 10px);
+      flex: 0 1 calc(50% - 10px); } }
+  @media screen and (max-width: 650px) {
+    .flex-item {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 calc(100% - 10px);
+      -moz-box-flex: 0;
+      -moz-flex: 0 1 calc(100% - 10px);
+      -ms-flex: 0 1 calc(100% - 10px);
+      flex: 0 1 calc(100% - 10px);
+      height: auto; } }
+
+/*------------------------------------*\
                 ¡HEADER
 \*------------------------------------*/
 header {
   height: 100px; }
+  header .logo {
+    float: left; }
+  header nav {
+    float: left; }
+
+/*------------------------------------*\
+              ¡TEAM PAGE
+\*------------------------------------*/
+.wrap-team {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between; }
+
+.wrap-member {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 calc(33% - 10px);
+  -moz-box-flex: 0;
+  -moz-flex: 0 1 calc(33% - 10px);
+  -ms-flex: 0 1 calc(33% - 10px);
+  flex: 0 1 calc(33% - 10px);
+  margin-bottom: 10px;
+  text-align: center; }
+  .wrap-member-title {
+    font-weight: 600;
+    font-size: 32px;
+    padding: 10px 0 0; }
+
+/*------------------------------------*\
+              ¡WORK PAGE
+\*------------------------------------*/
+.wrap-work {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between; }
+
+.wrap-sample {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 calc(50% - 10px);
+  -moz-box-flex: 0;
+  -moz-flex: 0 1 calc(50% - 10px);
+  -ms-flex: 0 1 calc(50% - 10px);
+  flex: 0 1 calc(50% - 10px);
+  margin-bottom: 20px; }
 
 /*------------------------------------*\
                 ¡FOOTER
